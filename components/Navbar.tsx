@@ -38,6 +38,15 @@ export default function Navbar() {
                         Login
                     </Link>
                 )}
+                {isLoggedIn && (
+                    <Link
+                        href="/account/me"
+                        className="bg-green-600 px-3 py-1 rounded hover:bg-green-700"
+                    >
+                        내 정보
+                    </Link>
+                )}
+
             </div>
         </nav>
     );
