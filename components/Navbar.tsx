@@ -46,6 +46,14 @@ export default function Navbar() {
                         내 정보
                     </Link>
                 )}
+                {isLoggedIn && (
+                    <Link
+                        href="/board"
+                        className="bg-purple-600 px-3 py-1 rounded hover:bg-purple-700"
+                    >
+                        게시판
+                    </Link>
+                )}
 
             </div>
         </nav>
